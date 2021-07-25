@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+ <title>Web-design-Challenge</title>   
+ <link rel="stylesheet" href="assets/Style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    
+  <nav class="navbar navbar-expand-md navbar-light">
+      <a href="../landing.html" class="navbar-brand">Latitude Summary</a>
+      <!-- <button
+       class="navbar-toggler"
+       type="button"
+       data-bs-toggle="collapse"
+       data-bs-target="#toggleMobileMenu"
+       aria-contorls="toggleMobileMenu"
+       aria-expanded="false"
+       aria-labe="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav dropdown-menu-sm-left text-center">
+          <li><a href="Comparison.html">Comparison</a></li>
+          <li><a href="Data.html">Data</a></li> 
+          <div class="dropdown">
+            <button class=dropbtn">Plots
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content"
+                <ul>
+                  <li><a href="../Visualisation/Temperature.html">Temperature</a></li>
+                  <li><a href="../Visualisation/Humidity.html">Humidity</a></li>
+                  <li><a href="../Visualisation/Cloudiness.html">Cloudiness</a></li>
+                  <li><a href="../Visualisation/Windspeed.html">Wind speed</a></li>
+                </ul>
+            </div>
+          </div>
+  
+        </ul> 
+      </div> 
+      
+    </nav>
+  </div>
+    <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-md-12">
+          <h1 class="comparison-header">vs. Max Temperature</h1>
+          <a href="../Visualisation/Humidity.html"><img src="../assets/Fig1.png" alt="Latitude vs. Temperature" ></a>
+          <p >The purpose of this section was to analyze if the correlation between latitude and temperature </p>
+          <br>
+          <p >Based on the scatter plots, there is strong correalation between latitue and temperature, however the correlation is not linear  .</p>  
+        </div>
+      </article>
+    </div>
+    <!-- End of container  -->
+
+    
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

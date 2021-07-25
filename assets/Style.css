@@ -1,88 +1,82 @@
-header 
-{    
-  font-size:20px;
-    background:turquoise;
-    margin:0;
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  width:100%;
+  margin:auto;
+  font-family: Arial;
 }
 
-header::after{
-  content: '';
-  display:table;
-  clear:both;
-}
-.container
-{
-    background: rgb(o,100,0);
-    text-align:left;
-    width: 90%;
-    margin: 0 auto;
-    
-}
-.container ul
-{
-    display:inline-flex;
-    list-style:none;
-}
-.container ul li
-{
-    width:250px;
-    margin:15px;
-    padding:15px;
-}
-.container ul li a
-{   text-decoration: none;
-    text-transform: uppercase;
-    font-size:20px;
-    color:#444
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* .active,.container ul li:hover
-{
-    background:steelblue;
-    border-radius: 3px;
-} */
-.container .fa
-{
-    margin-right:8ox; 
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
-.sub-menu_1
-{
-    display:none;
-}
-.container ul li:hover .sub-menu_1
-{
-    
-    display:block;
-    position:relative;
-    background: rgb(o,100,0);
-    margin-top:10px;
-    margin-left:-10px;
-    
-}
-.container ul li:hover .sub-menu_1 ul
-{
-    font-size: 14px;
-    display:block;
-    margin:10px;
-}
-.container ul li:hover .sub-menu_1 ul li
-{   
-    display:table-row;
-    width:50px;
-    padding:10ox;
-    border-bottom:1px dotted #fff;
-    background:transparent;
-    border-radius:0;
-    text-align:left;
 
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color:blue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
-.container ul li:hover .sub-menu_1 ul li:last-child
-{
-    border-bottom:none;
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:slategrey;
 }
-/*
- First External CSS Stylesheet
- */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
 
 /* Styling for HTML elements */
 body {
@@ -100,48 +94,105 @@ body {
     padding: 20px 0;
     margin: 0;
     margin-bottom: 20px;
-    font-size: 28px;
-    color: #eee;
+    font-size: 24px;
+    color: #4aaaa5;
     text-align: center;
   }
   
-  h2 {
-    font-size: 24px;
-  }
-  
-  a {
-    color: #d21034;
-  }
-  
-  /* Selecting elements by class */
-
-  /* Selecting elements by ID */
-  #main-bio,
-  #Visualizations-set,
-  #center-image {
+    
+/* ----descriptionSTART---- */
+  #description-image {
+    /* Positioning */
     float: left;
-  }
   
-  #figure {
-    position: relative;
-  }
-  
-  #Title {
-    position: center;
-    top: 150px;
-    left: 30px;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #Visualizations-set {
-    width: 30%;
-  }
-  
-  #bio-image {
-    width: 200px;
-    height: 200px;
+    /* Box-model */
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
     margin-right: 20px;
   }
+  /* ----IMAGE NAV START---- */
+  #visual-area {
+    width: 100%;
+
+  /* Box-model */
+    padding: 30px 30px 43px;
+
+  /* Positioning */
+    margin-top: 32px;
+
+  /* Visual */
+    background-color: #fff;
+  }
+
+  .imageNav-header {
+    /* Positioning */
+    margin-bottom: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+
+    /* Typography */
+    font-size: 25px;
+    font-weight: bold;
+    color: #4aaaa5;
+  }
+
+  .imageNav-photo {
+    width: 160px;
+
+    /* Box-model */
+    height: 160px;
+  }
+
+  .imageNav-photo:hover {
+   /* Visuals */
+    opacity: 0.6;
+  }
+
+  .imageNav-photo.active {
+    /* Visuals */
+    border: 2px solid #4aaaa5;
+  }
+
+  #images {
+    /* Box-model */
+    padding-top: 15px;
+
+    /* Typography */
+    text-align: center;
+  }
+
+  /* ----IMAGE NAV END---- */
+
+/* ----COMPARISON START---- */
+.comparison-image:hover {
+  opacity: 0.6;
+}
+
+.comparison-header {
+  /* Positioning */
+  margin-bottom: 20px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 20px;
+  font-weight: bold;
+  color: #4aaaa5;
+  text-align: center;
+}
+
+/* ----COMPARISON END---- */
+
+
+.analysis_head {
+   font-size: 20px;
+    font-weight: bold;
+    color: #4aaaa5;
+    text-align: center; 
+  }
+
+.analysis_body {
+    font-size: 20px;
+     font-weight: bold;
+     color:black;
+     text-align: center; 
+   }

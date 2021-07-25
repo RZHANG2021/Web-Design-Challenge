@@ -48,39 +48,44 @@
       </div> 
       
     </nav>
-  </div>  
+  </div>
+    <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-md-12">
+          <h1 class="description-header">Comparison: Latitude vs X</h1>
+          <hr class="description-hr"/>
+          <p class="description-text">Click any plot to get an in-depth analysis.</p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">vs. Max Temperature</h2>
+          <a href="../Web-Design-Challenge/Visualisation/Temperature.html"><img src="../Web-Design-Challenge/assets/Fig1.png" alt="Latitude vs. Max Temperature" class="comparison-image img-responsive"></a>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">vs. Humidity</h2>
+          <a href="../Web-Design-Challenge/Visualisation/Humidity.html"><img src="../Web-Design-Challenge/assets/Fig2.png" alt="Latitude vs. Humidity" class="comparison-image img-responsive"></a>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">vs. Cloudiness</h2>
+          <a href="../Web-Design-Challenge/Visualisation/Cloudiness.html"><img src="../Web-Design-Challenge/assets/Fig3.png" alt="Latitude vs. Cloudiness" class="comparison-image img-responsive"></a>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">vs. Wind Speed</h2>
+          <a href="../Web-Design-Challenge/Visualisation/Windspeed.html"><img src="../Web-Design-Challenge/assets/Fig4.png" alt="Latitude vs. Wind Speed" class="comparison-image img-responsive"></a>
+        </div>
+      </article>
+    </div>
+    <!-- End of container  -->
 
-
-<main class="container">
-    <sectio class="row">
-      <div class="col-md-8">
-        <h1 id="Title"><strong>Summary: Latitude vs. X</strong></h2>
-        <img id="description-image" src="../Web-Design-Challenge/assets/Fig1.png" alt="Latitude vs. Max temperature">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-        <br>
-        <p> After assembling the dataset, we use Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
     
-      </div>
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-      <div class="col-md-4">
-        <section class="visual-area">
-          <h1 ><strong>Visualizations</strong></h2>
-          
-            <div id="images">
-              <div class="column">    
-                <a href="../Web-Design-Challenge/Visualisation/Temperature.html"><img src="../Web-Design-Challenge/assets/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
-                <a href="../Web-Design-Challenge/Visualisation/Humidity.html"><img src="../Web-Design-Challenge/assets/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                <a href="../Web-Design-Challenge/Visualisation/Cloudiness.html"><img src="../Web-Design-Challenge/assets/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                <a href="../Web-Design-Challenge/Visualisation/Windspeed.html"><img src="../Web-Design-Challenge/assets/Fig4.png" alt="Latitude vs. Wind speed" class="imageNav-photo"></a>
-              
-              </div>
-            </div>
-        </section>  
-      </div>
-    </section>
-  </main>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 
-</body>
-</html>>
-
-
+</html>
