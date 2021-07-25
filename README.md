@@ -1,4 +1,5 @@
 Latitude - Latitude Analysis Dashboard with Attitude
+
 This challenge is based on a past analysis on weather condition and latitude analysis. Specifically, plotting weather data and building a dashboard.
 Individual pages for each plot will be created to contain the visualizations and their corresponding explanations. In addition, a landing page to provide a summary, and another page where a comparison of all of the plots can be visualised. Finally, a page where to display the data used to build them.
 Website Requirements
