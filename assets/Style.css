@@ -183,16 +183,3 @@ body {
 /* ----COMPARISON END---- */
 
 
-.analysis_head {
-   font-size: 20px;
-    font-weight: bold;
-    color: #4aaaa5;
-    text-align: center; 
-  }
-
-.analysis_body {
-    font-size: 20px;
-     font-weight: bold;
-     color:black;
-     text-align: center; 
-   }
