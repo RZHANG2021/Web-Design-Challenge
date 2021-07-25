@@ -1,7 +1,8 @@
 
 /* Navbar container */
 .navbar {
-  overflow: hidden;
+  /* overflow: hidden; */
+  background: #4aaaa5;
   width:100%;
   margin:auto;
   font-family: Arial;
@@ -69,6 +70,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* @media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  } */
 
 /* Giving the .post element margin on 3 sides */
 .post {
